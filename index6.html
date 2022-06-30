@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chia hết cho </title>
+</head>
+<body>
+<input id="number1" type="text">
+<input id="number2" type="text">
+<button onclick="ketQuaChiaHet()">ket qua</button>
+<p id="phep chia het"></p>
+<script>
+    function ketQuaChiaHet() {
+        let number1 = +document.getElementById('number1').value;
+        console.log('number 1',number1)
+        let number2 = +document.getElementById('number2').value;
+        console.log('number2',number2)
+        console.log('check=====>',number1%number2==0)
+        if (number1%number2==0){
+            document.getElementById('phep chia het').innerHTML= 'số ' + number1 +' chia hết cho ' +number2;
+        }else {
+            document.getElementById('phep chia het').innerHTML= 'số ' + number1 +' không chia hết cho ' + number2;
+        }
+    }
+</script>
+</body>
+</html>

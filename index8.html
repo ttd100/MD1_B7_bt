@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>so nguyên lớn nhất</title>
+</head>
+<body>
+<h1>nhập 3 số bất kỳ:</h1>
+<input id="number1" type="text">
+<input id="number2" type="text">
+<input id="number3" type="text">
+<button onclick="soLonNhat()">kết quả</button>
+<h1 id="ket qua"></h1>
+<script>
+  function soLonNhat() {
+      let number1 = +document.getElementById('number1').value;
+      let number2 = +document.getElementById('number2').value;
+      let number3 = +document.getElementById('number3').value;
+
+      let max = number1 > number2 ? (number1 > number3 ? number1 : number3) : (number2 > number3 ? number2 : number3);
+      document.getElementById("ket qua").innerHTML="số lớn nhất là " + max;
+  }
+
+
+
+
+
+
+
+
+  //   let max= number1;
+  //   if (number2 > max) {
+  //       max = number2
+  //   }
+  //   if (number3 > max){
+  //           max = number3
+  // document.getElementById("ket qua").innerHTML= "số" +number3+ 'là số lớn nhất';
+  //   }
+  // }
+  //
+  //
+  //
+  //
+
+
+
+  //   if (number1>number2){
+  //     if (number1>number3){
+  //       document.getElementById('ket qua').innerHTML='số '+ number1+' là số lớn nhất';
+  //     }else{
+  //       document.getElementById('ket qua').innerHTML='số '+number3+' là số lớn nhất';
+  //     }
+  //   }else if (number2>number3){
+  //       document.getElementById('ket qua').innerHTML='số '+number2+' là số lớn nhất';
+  //   }else {
+  //       document.getElementById('ket qua').innerHTML='số '+number3+' là số lớn nhất';
+  //   }
+  // }
+</script>
+</body>
+</html>

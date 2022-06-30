@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="thang" type="text">
+<button onclick="ketQua()"> tính số ngày</button>
+<h1 id=""></h1>
+<script>
+    function ketQua() {
+        let thang = document.getElementById('thang').value
+        if (thang==1){
+            document.getElementById('ketQua').innerHTML='tháng 1 có 31 ngày';
+        }else if (thang==2){
+            document.getElementById('ketQua').innerHTML='tháng 2 có 28 hoặc 29 ngày';
+        }else if (thang==3){
+            document.getElementById('ketQua').innerHTML='tháng 3 có 31 ngày';
+        }else if (thang==4){
+            document.getElementById('ketQua').innerHTML='tháng 4 có 30 ngày';
+        }else if (thang==5){
+            document.getElementById('ketQua').innerHTML='tháng 5 có 31 ngày';
+        }else if (thang==6){
+            document.getElementById('ketQua').innerHTML='tháng 6 có 30 ngày';
+        }else if (thang==7){
+            document.getElementById('ketQua').innerHTML='tháng 7 có 31 ngày';
+        }else if (thang==8){
+            document.getElementById('ketQua').innerHTML='tháng 8 có 31 ngày';
+        }else if (thang==9){
+            document.getElementById('ketQua').innerHTML='tháng 9 có 30 ngày';
+        }else if (thang==10){
+            document.getElementById('ketQua').innerHTML='tháng 10 có 31 ngày';
+        }else if (thang==11){
+            document.getElementById('ketQua').innerHTML='tháng 11 có 30 ngày';
+        }else if (thang==12){
+            document.getElementById('ketQua').innerHTML='tháng 12 có 31 ngày';
+        }else {
+            document.getElementById('ketQua').innerHTML='không có kết quả';
+        }
+
+    }
+
+
+</script>
+</body>
+</html>

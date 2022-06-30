@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>kiem tra số tuổi</title>
+</head>
+<body>
+<h1>nhập vào số tuổi:</h1>
+<input id="tuoi" type="text">
+<button onclick="kiemTraTuoi()">kết quả</button>
+<h1 id="soTuoi"></h1>
+<script>
+    function kiemTraTuoi(){
+        let tuoi = +document.getElementById('soTuoi').value;
+        if (tuoi < 16){
+            document.getElementById('soTuoi').innerHTML= 'chua du tuoi di hoc';
+        }else {
+            document.getElementById('soTuoi').innerHTML= 'nop tien di r học';
+        }
+    }
+</script>
+</body>
+</html>
